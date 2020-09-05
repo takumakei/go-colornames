@@ -33,11 +33,11 @@ func run() error {
 	flag.Parse()
 
 	q := strings.Join(flag.Args(), " ")
-	c, ok := namedcolors.Find(q)
-	if !ok {
+	n, c := namedcolors.Find(q)
+	if n == "" {
 		return fmt.Errorf("error: color not found for %q", q)
 	}
-	fmt.Printf("#%s %q\n", c.Hex(), c.Name)
+	fmt.Printf("#%s %q\n", c.Hex(), n)
 
 	m := NewUniform(c, image.Rect(0, 0, FlagWidth, FlagHeight))
 
