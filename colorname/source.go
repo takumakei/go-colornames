@@ -1,4 +1,4 @@
-package namedcolors
+package colorname
 
 import "github.com/takumakei/go-colornames"
 

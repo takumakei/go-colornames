@@ -1,14 +1,14 @@
-package namedcolors_test
+package colorname_test
 
 import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/takumakei/go-colornames/namedcolors"
+	"github.com/takumakei/go-colornames/colorname"
 )
 
 func Example() {
-	if name, rgb := namedcolors.Find("oceanblue"); name != "" {
+	if name, rgb := colorname.Find("oceanblue"); name != "" {
 		fmt.Println(rgb.Hex(), name)
 	}
 	// Output:
@@ -16,7 +16,7 @@ func Example() {
 }
 
 func ExampleFindNames() {
-	m := namedcolors.FindNames("funpin")
+	m := colorname.FindNames("funpin")
 	for _, e := range m {
 		b, _ := json.Marshal(e)
 		fmt.Println(string(b))

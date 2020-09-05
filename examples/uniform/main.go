@@ -10,7 +10,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/takumakei/go-colornames/namedcolors"
+	"github.com/takumakei/go-colornames/colorname"
 )
 
 var (
@@ -33,7 +33,7 @@ func run() error {
 	flag.Parse()
 
 	q := strings.Join(flag.Args(), " ")
-	n, c := namedcolors.Find(q)
+	n, c := colorname.Find(q)
 	if n == "" {
 		return fmt.Errorf("error: color not found for %q", q)
 	}
