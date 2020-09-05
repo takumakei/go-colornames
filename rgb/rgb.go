@@ -1,5 +1,5 @@
-// Package color implements the 24-bit color type RGB
-package color
+// Package rgb implements the 24-bit color type RGB
+package rgb
 
 import (
 	"image/color"

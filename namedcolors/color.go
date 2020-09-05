@@ -1,9 +1,9 @@
 package namedcolors
 
-import "github.com/takumakei/go-colornames/color"
+import "github.com/takumakei/go-colornames/rgb"
 
 // Color represents the color.
 type Color struct {
 	Name string
-	color.RGB
+	rgb.RGB
 }

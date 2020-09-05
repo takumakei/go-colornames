@@ -1,6 +1,6 @@
 package colornames
 
-import "github.com/takumakei/go-colornames/color"
+import "github.com/takumakei/go-colornames/rgb"
 
 // N is the number of the color names in the list.
 const N = count
@@ -17,9 +17,9 @@ func Get(index int) string {
 // RGB returns the color at index of the list.
 //
 // The index must be equal or greater than 0 and smaller than colornames.N.
-func RGB(index int) color.RGB {
+func RGB(index int) rgb.RGB {
 	index *= 3
-	return color.RGB(_RGBs[index : index+3])
+	return rgb.RGB(_RGBs[index : index+3])
 }
 
 //go:generate go run ./source

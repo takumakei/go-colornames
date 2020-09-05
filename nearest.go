@@ -4,11 +4,11 @@ import (
 	"image/color"
 	"math"
 
-	rgbcolor "github.com/takumakei/go-colornames/color"
+	"github.com/takumakei/go-colornames/rgb"
 )
 
-// Nearest returns the name and rgb of the nearest color to c
-func Nearest(c color.Color) (name string, rgb rgbcolor.RGB) {
+// Nearest returns the name and RGB of the nearest color to c
+func Nearest(c color.Color) (name string, colorOfName rgb.RGB) {
 	R, G, B, _ := c.RGBA()
 	ni := 0
 	nd := uint64(math.MaxUint32)
@@ -19,7 +19,7 @@ func Nearest(c color.Color) (name string, rgb rgbcolor.RGB) {
 		if d < nd {
 			ni = i
 			nd = d
-			rgb = c
+			colorOfName = c
 		}
 	}
 	name = Get(ni)
