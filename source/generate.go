@@ -1,3 +1,4 @@
+// generator of source.go
 package main
 
 import (

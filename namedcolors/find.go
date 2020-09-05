@@ -1,4 +1,3 @@
-// Package namedcolors
 package namedcolors
 
 import (
