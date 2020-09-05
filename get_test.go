@@ -28,7 +28,7 @@ func Example_n() {
 	// 25577
 }
 
-func Example_longestName() {
+func Example() {
 	// Find the longest color name and its color value.
 	var name string
 	var index int

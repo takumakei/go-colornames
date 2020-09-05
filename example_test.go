@@ -16,7 +16,7 @@ const (
 	P = 3
 )
 
-func Example() {
+func Example_allColors() {
 	m := image.NewRGBA(image.Rect(0, 0, W*P, H*P))
 
 	i := 0
