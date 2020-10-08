@@ -25,7 +25,7 @@ func ExampleRGB() {
 func Example_n() {
 	fmt.Println(colornames.N)
 	// Output:
-	// 25780
+	// 25791
 }
 
 func Example() {
