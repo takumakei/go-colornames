@@ -11,7 +11,7 @@ func ExampleGet() {
 	n := colornames.Get(i)
 	fmt.Println(n)
 	// Output:
-	// Abstract
+	// Abra Goldenrod
 }
 
 func ExampleRGB() {
@@ -19,13 +19,13 @@ func ExampleRGB() {
 	c := colornames.RGB(i)
 	fmt.Printf("%q is the color value of %q", c.Hex(), colornames.Get(i))
 	// Output:
-	// "e4cb97" is the color value of "Abstract"
+	// "eec400" is the color value of "Abra Goldenrod"
 }
 
 func Example_n() {
 	fmt.Println(colornames.N)
 	// Output:
-	// 25791
+	// 27927
 }
 
 func Example() {
@@ -42,5 +42,5 @@ func Example() {
 	c := colornames.RGB(index)
 	fmt.Println(c.Hex(), name)
 	// Output:
-	// f77f00 University of Tennessee Orange
+	// ffaaa5 Alright Then I Became a Princess
 }
