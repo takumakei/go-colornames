@@ -1,6 +1,8 @@
 Color Names
 ======================================================================
 
+[![GoDoc](https://pkg.go.dev/badge/github.com/takumakei/go-colornames)](https://godoc.org/github.com/takumakei/go-colornames)
+
 The Go package colornames contains the list of color names.
 
 The color names have taken from https://github.com/meodai/color-names.
